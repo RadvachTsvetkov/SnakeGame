@@ -1,14 +1,16 @@
-﻿Build started 26 Oct 2015 16:36:05.
-     1>Project "C:\Users\BOdy\Desktop\SnakeGame\SnakeGameLib\SnakeGameLib.vcxproj" on node 2 (Build target(s)).
+﻿Build started 26 Oct 2015 18:31:23.
+     1>Project "F:\Full\News Shits\ChavdarTsvetkovGitHub\SnakeGame\SnakeGameLib\SnakeGameLib.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SNAKEGAMELIB_EXPORTS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Snake.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SNAKEGAMELIB_EXPORTS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Point2D.cpp Snake.cpp
          Snake.cpp
+         Point2D.cpp
+         Generating Code...
        Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\BOdy\Desktop\SnakeGame\Debug\SnakeGameLib.lib" /NOLOGO Debug\Point2D.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"F:\Full\News Shits\ChavdarTsvetkovGitHub\SnakeGame\Debug\SnakeGameLib.lib" /NOLOGO Debug\Point2D.obj
          Debug\Snake.obj
-         SnakeGameLib.vcxproj -> C:\Users\BOdy\Desktop\SnakeGame\Debug\SnakeGameLib.lib
-     1>Done Building Project "C:\Users\BOdy\Desktop\SnakeGame\SnakeGameLib\SnakeGameLib.vcxproj" (Build target(s)).
+         SnakeGameLib.vcxproj -> F:\Full\News Shits\ChavdarTsvetkovGitHub\SnakeGame\Debug\SnakeGameLib.lib
+     1>Done Building Project "F:\Full\News Shits\ChavdarTsvetkovGitHub\SnakeGame\SnakeGameLib\SnakeGameLib.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.80
+Time Elapsed 00:00:01.18

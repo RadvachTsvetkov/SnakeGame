@@ -41,7 +41,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\BOdy\Desktop\SnakeGame\SnakeGameLib;$(IncludePath)</IncludePath>
+    <IncludePath>..\SnakeGameLib;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -84,13 +84,13 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ConsoleInputReader.h" />
+    <ClInclude Include="ConsoleRenderer.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\SnakeGameLib\SnakeGameLib.vcxproj">
       <Project>{c7bfde0f-37a4-48a7-84a7-c9a75d3725ab}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ConsoleInputReader.h" />
-    <ClInclude Include="ConsoleRenderer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
