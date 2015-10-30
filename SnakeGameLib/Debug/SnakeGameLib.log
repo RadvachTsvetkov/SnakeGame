@@ -1,16 +1,16 @@
-﻿Build started 26 Oct 2015 18:31:23.
-     1>Project "F:\Full\News Shits\ChavdarTsvetkovGitHub\SnakeGame\SnakeGameLib\SnakeGameLib.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 30 Oct 2015 17:07:26.
+     1>Project "G:\Storage 2014-Feb-10\Programs_Installers\SDXs\XNA Game Studio 4 (English) -DreamSpark\SnakeGame\SnakeGameLib\SnakeGameLib.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SNAKEGAMELIB_EXPORTS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Point2D.cpp Snake.cpp
          Snake.cpp
          Point2D.cpp
          Generating Code...
        Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"F:\Full\News Shits\ChavdarTsvetkovGitHub\SnakeGame\Debug\SnakeGameLib.lib" /NOLOGO Debug\Point2D.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"G:\Storage 2014-Feb-10\Programs_Installers\SDXs\XNA Game Studio 4 (English) -DreamSpark\SnakeGame\Debug\SnakeGameLib.lib" /NOLOGO Debug\Point2D.obj
          Debug\Snake.obj
-         SnakeGameLib.vcxproj -> F:\Full\News Shits\ChavdarTsvetkovGitHub\SnakeGame\Debug\SnakeGameLib.lib
-     1>Done Building Project "F:\Full\News Shits\ChavdarTsvetkovGitHub\SnakeGame\SnakeGameLib\SnakeGameLib.vcxproj" (Rebuild target(s)).
+         SnakeGameLib.vcxproj -> G:\Storage 2014-Feb-10\Programs_Installers\SDXs\XNA Game Studio 4 (English) -DreamSpark\SnakeGame\Debug\SnakeGameLib.lib
+     1>Done Building Project "G:\Storage 2014-Feb-10\Programs_Installers\SDXs\XNA Game Studio 4 (English) -DreamSpark\SnakeGame\SnakeGameLib\SnakeGameLib.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.18
+Time Elapsed 00:00:01.29

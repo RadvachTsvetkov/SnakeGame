@@ -6,6 +6,7 @@ class IInputReader;
 
 #include <list>
 #include <memory>
+#include <string>
 #include "MapValue.h"
 #include "MoveDirection.h"
 #include "Point2D.h"
@@ -13,10 +14,15 @@ class IInputReader;
 class Snake
 {
 private:
+	static const std::string YOUR_SCORE_IS_MESSAGE;
+	static const std::string GAME_OVER_MESSAGE;
+	static const int MINIMUM_MAP_WIDTH;
+	static const int MINIMUM_MAP_HEIGHT;
+	static const int TAIL_START_LENGTH;
+
 	const int MAP_WIDTH;
 	const int MAP_HEIGHT;
 	const int SCORE_VALUE;
-	const int TAIL_START_LENGTH = 3;
 
 	bool gameOver;
 	IRenderer &renderer;

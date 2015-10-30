@@ -6,6 +6,12 @@
 #include "IRenderer.h"
 #include "IInputReader.h"
 
+const std::string Snake::YOUR_SCORE_IS_MESSAGE = "\tYour score is: ";
+const std::string Snake::GAME_OVER_MESSAGE = "\tGame over!";
+const int Snake::MINIMUM_MAP_WIDTH = 10;
+const int Snake::MINIMUM_MAP_HEIGHT = 10;
+const int Snake::TAIL_START_LENGTH = 3;
+
 Snake::Snake(IRenderer &renderer, IInputReader &inputReader, int mapWidth, int mapHeight, int scorePerFood) : renderer(renderer), inputReader(inputReader),
 	MAP_WIDTH(mapWidth), MAP_HEIGHT(mapHeight), SCORE_VALUE(scorePerFood),
 	gameOver(false), direction(MoveDirection::UP), tailLength(TAIL_START_LENGTH), score(0), map(new MapValue[mapWidth * mapHeight]{}),
@@ -34,7 +40,7 @@ void Snake::StartGame()
 		Sleep(150);
 	}
 
-	this->renderer.RenderSingleMessage("\tGame over!");
+	this->renderer.RenderSingleMessage(GAME_OVER_MESSAGE);
 }
 
 void Snake::ReadInput()
@@ -113,7 +119,7 @@ void Snake::Render()
 {
 	this->renderer.Render(map, MAP_WIDTH, MAP_HEIGHT);
 
-	std::string scoreMessage = "\tYour score is: " + std::to_string(score);
+	std::string scoreMessage = YOUR_SCORE_IS_MESSAGE + std::to_string(score);
 	this->renderer.RenderSingleMessage(scoreMessage);
 }
 
@@ -205,14 +211,14 @@ void Snake::InitMapWalls()
 
 void Snake::VerifyMapSize() const
 {
-	if (MAP_WIDTH < 10)
+	if (MAP_WIDTH < MINIMUM_MAP_WIDTH)
 	{
-		throw std::invalid_argument("The provided map width should be greater than or equal to 10");
+		throw std::invalid_argument("The provided map width should be greater than or equal to " + std::to_string(MINIMUM_MAP_WIDTH));
 	}
 
 	// consider tail length, because tail is drawn on the height as head in the center
-	if (MAP_HEIGHT < 10)
+	if (MAP_HEIGHT < MINIMUM_MAP_HEIGHT)
 	{
-		throw std::invalid_argument("The provided map height should be greater than or equal to 10");
+		throw std::invalid_argument("The provided map height should be greater than or equal to " + std::to_string(MINIMUM_MAP_HEIGHT));
 	}
 }
